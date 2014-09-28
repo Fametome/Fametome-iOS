@@ -41,7 +41,6 @@
 		9628440E199A758A00A04426 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628440D199A758A00A04426 /* Friend.m */; };
 		96284411199A998F00A04426 /* FTFriendsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96284410199A998F00A04426 /* FTFriendsCollectionViewController.m */; };
 		96284415199B4A5500A04426 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96284414199B4A5500A04426 /* UIScrollView+EmptyDataSet.m */; };
-		96290C1019D80561000A1999 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96290C0F19D80561000A1999 /* cover.jpg */; };
 		963DC7A419B865E6007B32E2 /* FTChooseFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DC7A319B865E6007B32E2 /* FTChooseFaceViewController.m */; };
 		963DC7A719B8663E007B32E2 /* FTChooseFaceViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DC7A619B8663E007B32E2 /* FTChooseFaceViewCell.m */; };
 		963DC7AA19B86D4E007B32E2 /* FTChooseFaceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DC7A919B86D4E007B32E2 /* FTChooseFaceHeaderView.m */; };
@@ -172,7 +171,6 @@
 		96284410199A998F00A04426 /* FTFriendsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFriendsCollectionViewController.m; sourceTree = "<group>"; };
 		96284413199B4A5500A04426 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		96284414199B4A5500A04426 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
-		96290C0F19D80561000A1999 /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
 		963DC7A219B865E6007B32E2 /* FTChooseFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTChooseFaceViewController.h; sourceTree = "<group>"; };
 		963DC7A319B865E6007B32E2 /* FTChooseFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTChooseFaceViewController.m; sourceTree = "<group>"; };
 		963DC7A519B8663E007B32E2 /* FTChooseFaceViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTChooseFaceViewCell.h; sourceTree = "<group>"; };
@@ -429,7 +427,6 @@
 				96078D5B199E94CD003B4CFD /* 37x-Checkmark@2x.png */,
 				969D663A199E056D0082F5C1 /* login_background.png */,
 				9665BEB1199898BC0036C244 /* avatar.jpg */,
-				96290C0F19D80561000A1999 /* cover.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -761,7 +758,6 @@
 				9604109D19A0B8860014B667 /* calendar.png in Resources */,
 				96078D5C199E94CD003B4CFD /* 37x-Checkmark.png in Resources */,
 				960410A019A0B8860014B667 /* news.png in Resources */,
-				96290C1019D80561000A1999 /* cover.jpg in Resources */,
 				9612248C19C20A710055618E /* launch3.png in Resources */,
 				9604109F19A0B8860014B667 /* map.png in Resources */,
 				960410A219A0B8860014B667 /* tag.png in Resources */,

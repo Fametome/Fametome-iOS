@@ -122,7 +122,7 @@
                     }
                 }
 
-                 // Stats
+                // Stats
                 [[PFUser currentUser] incrementKey:@"flashSendCount"];
             }
             index++;

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fametome/FTAddFaceViewController.m"
-            timestampString = "430520749.653319"
+            timestampString = "433592891.976595"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-addFaceSubmit:"
             landmarkType = "5">
          </BreakpointContent>
