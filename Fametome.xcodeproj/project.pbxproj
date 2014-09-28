@@ -41,6 +41,7 @@
 		9628440E199A758A00A04426 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628440D199A758A00A04426 /* Friend.m */; };
 		96284411199A998F00A04426 /* FTFriendsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96284410199A998F00A04426 /* FTFriendsCollectionViewController.m */; };
 		96284415199B4A5500A04426 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96284414199B4A5500A04426 /* UIScrollView+EmptyDataSet.m */; };
+		96290C1019D80561000A1999 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96290C0F19D80561000A1999 /* cover.jpg */; };
 		963DC7A419B865E6007B32E2 /* FTChooseFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DC7A319B865E6007B32E2 /* FTChooseFaceViewController.m */; };
 		963DC7A719B8663E007B32E2 /* FTChooseFaceViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DC7A619B8663E007B32E2 /* FTChooseFaceViewCell.m */; };
 		963DC7AA19B86D4E007B32E2 /* FTChooseFaceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DC7A919B86D4E007B32E2 /* FTChooseFaceHeaderView.m */; };
@@ -73,7 +74,6 @@
 		96701BAB19929E7200A01603 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96701BAA19929E7200A01603 /* MainStoryboard.storyboard */; };
 		96701BB61992B1E900A01603 /* FTProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BB51992B1E900A01603 /* FTProfilViewController.m */; };
 		96701BC11992BA8C00A01603 /* FTCoreDataApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BC01992BA8C00A01603 /* FTCoreDataApi.m */; };
-		96701BC71992CD8F00A01603 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BC61992CD8F00A01603 /* Reachability.m */; };
 		96701BCB1992CDDC00A01603 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96701BCA1992CDDC00A01603 /* SystemConfiguration.framework */; };
 		96701BCE1992CDF700A01603 /* FTToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BCD1992CDF700A01603 /* FTToolBox.m */; };
 		96701BD1199385D900A01603 /* FTParseBackendApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BD0199385D900A01603 /* FTParseBackendApi.m */; };
@@ -95,6 +95,7 @@
 		9679174219B30D77002EB9A0 /* FTSendCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9679174119B30D77002EB9A0 /* FTSendCollectionViewController.m */; };
 		9679174519B30FBB002EB9A0 /* FTSendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9679174419B30FBB002EB9A0 /* FTSendCollectionViewCell.m */; };
 		9679174819B320C8002EB9A0 /* FTSendFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9679174719B320C8002EB9A0 /* FTSendFooterReusableView.m */; };
+		969C04AE19D80AA500C4183D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 969C04AD19D80AA500C4183D /* Reachability.m */; };
 		969D6564199BB8470082F5C1 /* FTReceptionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969D6563199BB8470082F5C1 /* FTReceptionCollectionViewController.m */; };
 		969D6567199BB8AA0082F5C1 /* FTReceptionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 969D6566199BB8AA0082F5C1 /* FTReceptionViewCell.m */; };
 		969D656A199BE87A0082F5C1 /* FTMessageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969D6569199BE87A0082F5C1 /* FTMessageContentViewController.m */; };
@@ -171,6 +172,7 @@
 		96284410199A998F00A04426 /* FTFriendsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFriendsCollectionViewController.m; sourceTree = "<group>"; };
 		96284413199B4A5500A04426 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		96284414199B4A5500A04426 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		96290C0F19D80561000A1999 /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
 		963DC7A219B865E6007B32E2 /* FTChooseFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTChooseFaceViewController.h; sourceTree = "<group>"; };
 		963DC7A319B865E6007B32E2 /* FTChooseFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTChooseFaceViewController.m; sourceTree = "<group>"; };
 		963DC7A519B8663E007B32E2 /* FTChooseFaceViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTChooseFaceViewCell.h; sourceTree = "<group>"; };
@@ -220,8 +222,6 @@
 		96701BB51992B1E900A01603 /* FTProfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTProfilViewController.m; sourceTree = "<group>"; };
 		96701BBF1992BA8C00A01603 /* FTCoreDataApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCoreDataApi.h; sourceTree = "<group>"; };
 		96701BC01992BA8C00A01603 /* FTCoreDataApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCoreDataApi.m; sourceTree = "<group>"; };
-		96701BC51992CD8F00A01603 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../../../../Downloads/Reachability/Reachability/Reachability.h; sourceTree = "<group>"; };
-		96701BC61992CD8F00A01603 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../../../../Downloads/Reachability/Reachability/Reachability.m; sourceTree = "<group>"; };
 		96701BCA1992CDDC00A01603 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		96701BCC1992CDF700A01603 /* FTToolBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTToolBox.h; sourceTree = "<group>"; };
 		96701BCD1992CDF700A01603 /* FTToolBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTToolBox.m; sourceTree = "<group>"; };
@@ -254,6 +254,8 @@
 		9679174419B30FBB002EB9A0 /* FTSendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSendCollectionViewCell.m; sourceTree = "<group>"; };
 		9679174619B320C8002EB9A0 /* FTSendFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSendFooterReusableView.h; sourceTree = "<group>"; };
 		9679174719B320C8002EB9A0 /* FTSendFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSendFooterReusableView.m; sourceTree = "<group>"; };
+		969C04AC19D80AA500C4183D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		969C04AD19D80AA500C4183D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		969D6562199BB8470082F5C1 /* FTReceptionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTReceptionCollectionViewController.h; sourceTree = "<group>"; };
 		969D6563199BB8470082F5C1 /* FTReceptionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTReceptionCollectionViewController.m; sourceTree = "<group>"; };
 		969D6565199BB8AA0082F5C1 /* FTReceptionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTReceptionViewCell.h; sourceTree = "<group>"; };
@@ -427,6 +429,7 @@
 				96078D5B199E94CD003B4CFD /* 37x-Checkmark@2x.png */,
 				969D663A199E056D0082F5C1 /* login_background.png */,
 				9665BEB1199898BC0036C244 /* avatar.jpg */,
+				96290C0F19D80561000A1999 /* cover.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -613,8 +616,8 @@
 		96701BC91992CDAD00A01603 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				96701BC51992CD8F00A01603 /* Reachability.h */,
-				96701BC61992CD8F00A01603 /* Reachability.m */,
+				969C04AC19D80AA500C4183D /* Reachability.h */,
+				969C04AD19D80AA500C4183D /* Reachability.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -758,6 +761,7 @@
 				9604109D19A0B8860014B667 /* calendar.png in Resources */,
 				96078D5C199E94CD003B4CFD /* 37x-Checkmark.png in Resources */,
 				960410A019A0B8860014B667 /* news.png in Resources */,
+				96290C1019D80561000A1999 /* cover.jpg in Resources */,
 				9612248C19C20A710055618E /* launch3.png in Resources */,
 				9604109F19A0B8860014B667 /* map.png in Resources */,
 				960410A219A0B8860014B667 /* tag.png in Resources */,
@@ -790,10 +794,10 @@
 				96701BD1199385D900A01603 /* FTParseBackendApi.m in Sources */,
 				96078D60199F9391003B4CFD /* FTFriendViewCell.m in Sources */,
 				96A2A7F119AA2FA5003A34E8 /* FTCarouselFacesProfilViewController.m in Sources */,
-				96701BC71992CD8F00A01603 /* Reachability.m in Sources */,
 				9615D0A819BC5265008D0144 /* FTChooseRecipientsViewCell.m in Sources */,
 				969D656D199BE9950082F5C1 /* FTFlashContentViewController.m in Sources */,
 				9679173619B0F8B5002EB9A0 /* FTFriendFacesViewController.m in Sources */,
+				969C04AE19D80AA500C4183D /* Reachability.m in Sources */,
 				963DC7AA19B86D4E007B32E2 /* FTChooseFaceHeaderView.m in Sources */,
 				9679173F19B1C1B7002EB9A0 /* FTFacesFriendCarouselCellView.m in Sources */,
 				9604108019A017AD0014B667 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
