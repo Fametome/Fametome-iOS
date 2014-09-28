@@ -45,6 +45,7 @@
 
 #pragma mark - Camera Helper methods
 - (BOOL) isCameraAvailable;
+- (void) cameraUnavailableAlert;
 - (UIImagePickerController *) activeCamera;
 - (UIImagePickerController *) activeCameraNormal;
 - (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height;

@@ -152,9 +152,13 @@
 #pragma mark - Image Picker Delegate
 - (void) takePicture
 {
-    UIImagePickerController *imagePicker = [[FTToolBox sharedGlobalData] activeCameraNormal];
-    imagePicker.delegate = self;
-    [self presentViewController:imagePicker animated:NO completion:nil];
+    if([[FTToolBox sharedGlobalData] isCameraAvailable]){
+        UIImagePickerController *imagePicker = [[FTToolBox sharedGlobalData] activeCameraNormal];
+        imagePicker.delegate = self;
+        [self presentViewController:imagePicker animated:NO completion:nil];
+    }else{
+        [[FTToolBox sharedGlobalData] cameraUnavailableAlert];
+    }
 }
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

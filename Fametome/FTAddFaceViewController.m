@@ -38,10 +38,14 @@
 
 #pragma mark - IBAction Methods
 - (IBAction)useCamera:(id)sender {
-    UIImagePickerController *imagePicker = [[FTToolBox sharedGlobalData] activeCamera];
-    imagePicker.delegate = self;
     
-    [self presentViewController:imagePicker animated:NO completion:nil];
+    if([[FTToolBox sharedGlobalData] isCameraAvailable]){
+        UIImagePickerController *imagePicker = [[FTToolBox sharedGlobalData] activeCamera];
+        imagePicker.delegate = self;
+        [self presentViewController:imagePicker animated:NO completion:nil];
+    }else{
+        [[FTToolBox sharedGlobalData] cameraUnavailableAlert];
+    }
 }
 
 - (IBAction)addFaceSubmit:(id)sender {

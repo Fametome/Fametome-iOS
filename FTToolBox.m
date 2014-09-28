@@ -126,6 +126,11 @@ static FTToolBox *sharedGlobalData = nil;
     return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
 }
 
+- (void) cameraUnavailableAlert{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Camera indisponible" message:@"Cet appareil ne vous permet pas de prendre de photos." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
 - (UIImagePickerController *)activeCamera
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
