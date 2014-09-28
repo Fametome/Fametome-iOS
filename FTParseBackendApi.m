@@ -172,7 +172,6 @@ static FTParseBackendApi *sharedGlobalData = nil;
                 user[@"avatar"] = imageFile;
                 [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                     if(!error){
-                        NSLog(@"HAHAH");
                         avatarImageView.image = resizeAvatar;
                         
                         // On prévient que l'upload a réussie
@@ -218,7 +217,7 @@ static FTParseBackendApi *sharedGlobalData = nil;
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:viewController.view animated:YES];
         hud.minSize = CGSizeMake(135.f, 135.f);
         hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
-        hud.labelText = @"Upload en cours";
+        hud.labelText = @"Chargement en cours";
         hud.progress = 0.0f;
         
         [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
