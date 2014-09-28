@@ -475,7 +475,7 @@ static FTToolBox *sharedGlobalData = nil;
 - (void) sendPushForMessageToRecipients:(NSMutableArray *)recipientObjectIds
 {
     NSString *title = [NSString stringWithFormat:@"Flash de %@", [self getAuthorUsername]];
-    NSString *message = [NSString stringWithFormat:@"%@ vous a envoyé un message.", [self getAuthorUsername]];
+    NSString *message = [NSString stringWithFormat:@"%@ vous a envoyé un flash.", [self getAuthorUsername]];
     
     for(NSString *friendObjectId in recipientObjectIds){
         [self sendPushNotificationToFriend:friendObjectId withTitle:title andMessage:message];
