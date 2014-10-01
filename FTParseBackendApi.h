@@ -25,6 +25,7 @@
 - (void) signUp:(NSString *)email withUsername:(NSString *)username andWithPassword:(NSString *)password fromController:(UIViewController *)currentController andWithEmailField:(UITextField *)emailField and:(UITextField *)usernameField and:(UITextField *)passwordField;
 // Helper method for @selector
 - (void) redirectToProfil:(UIViewController *)currentController;
+- (PFObject *) instanciateFlashWithSms:(NSString *)sms face:(NSString *)faceObjectId picture:(UIImage *)image index:(int)index forMessage:(PFObject *)message;
 
 #pragma mark - Login Method
 - (void) login:(NSString *)username withPassword:(NSString *)password fromController:(UIViewController *)currentController andWithUsernameField:(UITextField *)usernameField and:(UITextField *)passwordField;

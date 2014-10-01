@@ -93,11 +93,60 @@ static FTParseBackendApi *sharedGlobalData = nil;
                 [self performSelector:@selector(redirectToProfil:) withObject:currentController afterDelay:1.5];
                 
             }
+            
+            // Message de bienvenu
+            PFObject *message = [PFObject objectWithClassName:@"Message"];
+            message[@"recipientsObjectId"] = [NSArray arrayWithObjects:[PFUser currentUser].objectId, nil];
+            message[@"authorObjectId"] = @"MiVA0ErOHL";
+            message[@"seen"] = @NO;
+            message[@"time"] = @0;
+            message[@"animation"] = @0;
+
+            PFObject *flash1 = [self instanciateFlashWithSms:@"Bienvenu sur Fametome !" face:nil picture:nil index:0 forMessage:message];
+            PFObject *flash2 = [self instanciateFlashWithSms:@"Ceci est un flash. Il peut être composé de sms, de photos et de faces !" face:nil picture:nil index:1 forMessage:message];
+            PFObject *flash3 = [self instanciateFlashWithSms:@"Vous allez voir un sms, une photo et une face." face:nil picture:nil index:2 forMessage:message];
+            PFObject *flash4 = [self instanciateFlashWithSms:@"Un sms !" face:nil picture:nil index:4 forMessage:message];
+            PFObject *flash5 = [self instanciateFlashWithSms:nil face:nil picture:[UIImage imageNamed:@"photo.png"] index:5 forMessage:message];
+            PFObject *flash6 = [self instanciateFlashWithSms:nil face:@"gL9I3zyvAX" picture:nil index:6 forMessage:message];
+            PFObject *flash7 = [self instanciateFlashWithSms:@"Ajoutez vos amis et envoyer leur des flashs !" face:nil picture:nil index:7 forMessage:message];
+            
+            [flash1 saveInBackground];
+            [flash2 saveInBackground];
+            [flash3 saveInBackground];
+            [flash4 saveInBackground];
+            [flash5 saveInBackground];
+            [flash6 saveInBackground];
+            [flash7 saveInBackground];
+            
         }];
     }
 }
 
 // Helper method for signUp
+- (PFObject *) instanciateFlashWithSms:(NSString *)sms face:(NSString *)faceObjectId picture:(UIImage *)image index:(int)index forMessage:(PFObject *)message
+{
+    PFObject *flash = [PFObject objectWithClassName:@"Flash"];
+    if(sms)
+        flash[@"sms"] = sms;
+    else
+        flash[@"sms"] = [NSNull null];
+    
+    if(faceObjectId)
+        flash[@"faceObjectId"] = faceObjectId;
+    else
+        flash[@"faceObjectId"] = [NSNull null];
+    
+    if(image)
+        flash[@"image"] = [PFFile fileWithName:@"picture.png" data:UIImagePNGRepresentation(image)];
+    else
+        flash[@"image"] = [NSNull null];
+    
+    flash[@"index"] = [NSNumber numberWithInt:index];
+    flash[@"message"] = message;
+
+    return flash;
+}
+
 - (void) redirectToProfil:(UIViewController *)currentController
 {
     [[FTToolBox sharedGlobalData] redirectToProfil:currentController];

@@ -834,10 +834,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-uI-uIt">
-                                <rect key="frame" x="30" y="299" width="260" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHa-AN-QhE">
+                                <rect key="frame" x="35" y="445" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backForInitialisationMessageAction:" destination="fdV-d3-pLy" eventType="touchUpInside" id="GN9-pw-mfW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-uI-uIt">
+                                <rect key="frame" x="30" y="299" width="260" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -851,6 +863,7 @@
                     <connections>
                         <outlet property="answerButton" destination="Ck9-j1-yxb" id="gJg-9g-MVz"/>
                         <outlet property="avatarAuthorImageView" destination="zAM-28-OWA" id="cA3-hx-yuu"/>
+                        <outlet property="backForInitialisationMessageButton" destination="mHa-AN-QhE" id="f2H-YU-hD1"/>
                         <outlet property="flashImageView" destination="Qv1-W3-Ztz" id="ucM-5T-gUD"/>
                         <outlet property="flashLabel" destination="gyg-uI-uIt" id="JQ5-ZI-bmn"/>
                         <outlet property="pageControl" destination="9wl-4h-4yA" id="Uae-9W-diZ"/>
@@ -1004,7 +1017,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="sendCell" id="PfQ-e7-4LX" customClass="FTSendCollectionViewCell">
-                                <rect key="frame" x="10" y="64" width="300" height="55"/>
+                                <rect key="frame" x="10" y="0.0" width="300" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="55"/>
@@ -1040,7 +1053,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sendFooter" id="Z95-gC-ZRg" customClass="FTSendFooterReusableView">
-                            <rect key="frame" x="0.0" y="119" width="320" height="50"/>
+                            <rect key="frame" x="0.0" y="55" width="320" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-J8-xYo">
@@ -1190,7 +1203,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="chooseRecipientsCell" id="4Yx-jR-bNc" customClass="FTChooseRecipientsViewCell">
-                                <rect key="frame" x="0.0" y="64" width="106" height="130"/>
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="106" height="130"/>
@@ -1914,6 +1927,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="MZq-Mc-bOI"/>
-        <segue reference="hCM-3g-VuA"/>
+        <segue reference="41c-S0-ASd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -24,11 +24,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *flashImageView;
 @property (strong, nonatomic) NSString *textFlashLabel;
 @property (weak, nonatomic) IBOutlet UIButton *answerButton;
+@property (weak, nonatomic) IBOutlet UIButton *backForInitialisationMessageButton;
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 // Avatar auteur
 @property (weak, nonatomic) IBOutlet UIImageView *avatarAuthorImageView;
 
+- (IBAction)backForInitialisationMessageAction:(id)sender;
 
 @end

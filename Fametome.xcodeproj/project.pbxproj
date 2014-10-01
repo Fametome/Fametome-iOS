@@ -104,6 +104,7 @@
 		96A2A7F419AA2FD3003A34E8 /* FTCarouselFacesProfilViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2A7F319AA2FD3003A34E8 /* FTCarouselFacesProfilViewCell.m */; };
 		96A2A7F719ACE0D0003A34E8 /* FTFriendProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2A7F619ACE0D0003A34E8 /* FTFriendProfilViewController.m */; };
 		96D3B99819BF273800945D17 /* FTChooseFaceFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D3B99719BF273800945D17 /* FTChooseFaceFooter.m */; };
+		96DE7B6E19DC0F0000E622A5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DE7B6D19DC0F0000E622A5 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +272,7 @@
 		96A2A7F619ACE0D0003A34E8 /* FTFriendProfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFriendProfilViewController.m; sourceTree = "<group>"; };
 		96D3B99619BF273800945D17 /* FTChooseFaceFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTChooseFaceFooter.h; sourceTree = "<group>"; };
 		96D3B99719BF273800945D17 /* FTChooseFaceFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTChooseFaceFooter.m; sourceTree = "<group>"; };
+		96DE7B6D19DC0F0000E622A5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images.xcassets/AppIcon.appiconset/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +429,7 @@
 				96078D5B199E94CD003B4CFD /* 37x-Checkmark@2x.png */,
 				969D663A199E056D0082F5C1 /* login_background.png */,
 				9665BEB1199898BC0036C244 /* avatar.jpg */,
+				96DE7B6D19DC0F0000E622A5 /* logo.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -753,6 +756,7 @@
 				960410A319A0B8860014B667 /* wishlist.png in Resources */,
 				9604108819A01A370014B667 /* leftMenu.jpg in Resources */,
 				96701B7319929CD000A01603 /* Images.xcassets in Resources */,
+				96DE7B6E19DC0F0000E622A5 /* logo.png in Resources */,
 				9612248819C1FFC40055618E /* launch1.png in Resources */,
 				9604109E19A0B8860014B667 /* comments.png in Resources */,
 				9604109D19A0B8860014B667 /* calendar.png in Resources */,

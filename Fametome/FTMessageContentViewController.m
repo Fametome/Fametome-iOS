@@ -241,8 +241,15 @@
         }
         // Screen de réponse
         dataViewController.flashImage = nil;
-        dataViewController.textFlashLabel = [NSString stringWithFormat:@"Voulez-vous répondre à %@ ?", [_author.username capitalizedString]];
-        dataViewController.answerButton.hidden = NO;
+        
+        // A cause du message d'initialisation
+        if(![_author.username isEqualToString:@"Fametome"]){
+            dataViewController.textFlashLabel = [NSString stringWithFormat:@"Voulez-vous répondre à %@ ?", [_author.username capitalizedString]];
+            dataViewController.answerButton.hidden = NO;
+        }else{
+            dataViewController.backForInitialisationMessageButton.hidden = NO;
+        }
+        
         dataViewController.avatarAuthorImageView.hidden = NO;
         dataViewController.pageControl.hidden = YES;
     }

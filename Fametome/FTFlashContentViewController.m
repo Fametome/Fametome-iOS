@@ -20,7 +20,7 @@
 
     //NSLog(@"Index : %ld", (long)self.index);
     // Configuration
-
+    self.backForInitialisationMessageButton.hidden = YES;
     self.answerButton.hidden = YES;
     self.pageControl.hidden = YES;
     
@@ -29,7 +29,14 @@
     }else{
         [[FTToolBox sharedGlobalData] makeCornerRadius:_answerButton];
         [[FTToolBox sharedGlobalData] makeCornerRadius:_avatarAuthorImageView];
-        self.answerButton.hidden = NO;
+        [[FTToolBox sharedGlobalData] makeCornerRadius:_backForInitialisationMessageButton];
+        
+        // Message d'initialisation
+        if([_author.username isEqualToString:@"Fametome"])
+            _backForInitialisationMessageButton.hidden = NO;
+        else
+            self.answerButton.hidden = NO;
+            
         self.navigationController.navigationBar.hidden = NO;
         
         if(!_avatarAuthorImageView.image)
@@ -86,5 +93,8 @@
         [nextController setDestinataire:_author];
     }
     
+}
+- (IBAction)backForInitialisationMessageAction:(id)sender {
+    [[FTToolBox sharedGlobalData] redirectToReception:self];
 }
 @end
