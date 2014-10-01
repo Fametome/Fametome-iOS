@@ -91,7 +91,6 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="addFace:" destination="CUg-r9-cXO" eventType="touchUpInside" id="anE-iq-cuH"/>
-                                                            <segue destination="VoF-e1-749" kind="push" id="Km9-Vg-aRC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKu-LL-RDa">
@@ -266,6 +265,7 @@
                         <outlet property="showAllFriendButton" destination="bbN-ba-U2E" id="JgK-kK-66b"/>
                         <outlet property="statistiquesView" destination="abT-oL-r4W" id="9L7-2C-8yg"/>
                         <outlet property="usernameLabel" destination="lwO-lg-5eq" id="RPU-DE-exu"/>
+                        <segue destination="VoF-e1-749" kind="push" identifier="addFaceSegue" id="MZq-Mc-bOI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCk-fs-fES" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1913,7 +1913,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Km9-Vg-aRC"/>
+        <segue reference="MZq-Mc-bOI"/>
         <segue reference="hCM-3g-VuA"/>
     </inferredMetricsTieBreakers>
 </document>

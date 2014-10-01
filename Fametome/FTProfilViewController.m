@@ -274,7 +274,11 @@
 }
 
 - (IBAction)addFace:(id)sender{
-    // Redirection depuis le StoryBoard
+    if(_faces.count >= 12){
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oups..." message:@"Le nombre de faces par utilisateur est actuellement limité à 12." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+    }else
+        [self performSegueWithIdentifier:@"addFaceSegue" sender:self];
 }
 
 - (IBAction)addFriend:(id)sender {
