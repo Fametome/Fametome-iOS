@@ -44,10 +44,18 @@
 - (void) acceptRelation:(PFObject *)relation;
 - (void) refusedRelation:(PFObject *)relation;
 
-
 #pragma mark - Message Methods
 - (PFObject *) instantiateEmptyMessageFrom:(NSString *)auteurObjectId to:(NSString *)receveurObjectId;
 - (PFObject *) instantiateEmptyFlashForMessage:(PFObject *)message;
 - (NSMutableArray *) getAllMessagesWithoutFlashForUser:(PFUser *)user;
+
+#pragma mark - Initialisation Methods
+- (void) displayProfilAlertForController:(UIViewController *)controller;
+- (void) displayAddFaceAlertForController:(UIViewController *)controller;
+- (void) displayReceptionAlertForController:(UIViewController *)controller;
+- (void) displaySendAlertForController:(UIViewController *)controller;
+- (void) displayFriendAlertForController:(UIViewController *)controller;
+- (void) displaySearchFriendAlertForController:(UIViewController *)controller;
+- (void) displayAlertHelperWithTitle:(NSString *)title andMessage:(NSString *)message andController:(UIViewController *)controller;
 
 @end

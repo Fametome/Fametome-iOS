@@ -420,7 +420,7 @@ static FTParseBackendApi *sharedGlobalData = nil;
     message[@"story"] = @NO;
     message[@"temps"] = @500;
     message[@"animation"] = @1;
-    
+
     return message;
 }
 
@@ -443,6 +443,60 @@ static FTParseBackendApi *sharedGlobalData = nil;
     NSMutableArray *messages = [NSMutableArray arrayWithArray:results];
     return messages;
 }
+
+#pragma mark - Initialisation Methods
+- (void) displayProfilAlertForController:(UIViewController *)controller
+{
+    NSString *title = @"Bienvenu sur Fametome";
+    NSString *message = @"Cette partie vous permet d'ajouter et de consulter vos faces. Les faces vous permettent de créer des smileys personnalisés avec votre visage. Vous pouvez également changer votre avatar en cliquant dessus.";
+    [self displayAlertHelperWithTitle:title andMessage:message andController:controller];
+}
+
+- (void) displayAddFaceAlertForController:(UIViewController *)controller
+{
+    NSString *title = @"Ajouter une Face";
+    NSString *message = @"Cette partie vous permet d'ajouter une face, c'est à dire un smiley personnalisé avec votre visage. Par exemple prenez une photo de vous souriant et associez lui le texte :).";
+    [self displayAlertHelperWithTitle:title andMessage:message andController:controller];
+}
+
+- (void) displayReceptionAlertForController:(UIViewController *)controller
+{
+    NSString *title = @"Boîte de réception";
+    NSString *message = @"C'est ici que vous pouvez consulter vos flashs. Les Flashs sont les messages dans l'application Fametome. Pour voir un flash, cliquer sur le bouton 'voir le flash', il sera ensuite définitevement supprimé.";
+    [self displayAlertHelperWithTitle:title andMessage:message andController:controller];
+}
+
+- (void) displaySendAlertForController:(UIViewController *)controller
+{
+    NSString *title = @"Envoie de flash";
+    NSString *message = @"Vous pouvez composez vos flashs ici. Pour chaque éléement, écrivez un simple SMS ou ajouter une de vos faces en cliquant sur l'image à droite de cet élement. Vous pouvez envoyer jusqu'à 7 élements, à la fois. Cliquer ensuite sur le + en haut à droite pour ajouter des destinataires.";
+    [self displayAlertHelperWithTitle:title andMessage:message andController:controller];
+}
+
+- (void) displayFriendAlertForController:(UIViewController *)controller
+{
+    NSString *title = @"Mes amis";
+    NSString *message = @"Consulter le profil de vos amis en cliquant sur leur avatar. Pour chercher de nouveaux amis, cliquer sur l'icône de loupe en haut à droite. Pour consulter vos demandes d' amitié, cliquer sur l'icône à gauche de la loupe.";
+    [self displayAlertHelperWithTitle:title andMessage:message andController:controller];
+}
+
+- (void) displaySearchFriendAlertForController:(UIViewController *)controller
+{
+    NSString *title = @"Chercher des amis";
+    NSString *message = @"Chercher vos amis en saisissant leur pseudonyme puis en cliquant sur 'Lancer la recherche'.";
+    [self displayAlertHelperWithTitle:title andMessage:message andController:controller];
+}
+
+- (void) displayAlertHelperWithTitle:(NSString *)title andMessage:(NSString *)message andController:(UIViewController *)controller{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:controller cancelButtonTitle:@"OK, j'ai compris !" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+
+
+
+
+
 
 
 @end
