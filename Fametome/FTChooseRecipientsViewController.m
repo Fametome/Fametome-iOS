@@ -126,14 +126,14 @@
                 [[PFUser currentUser] incrementKey:@"flashSendCount"];
             }
             index++;
+            if(index >= [flashs count])
+                // Push notification
+                [[FTToolBox sharedGlobalData] sendPushForMessageToRecipients:message[@"recipientsObjectId"]];
         }
         
         // Stats
         [[PFUser currentUser] incrementKey:@"messageSendCount"];
         [[PFUser currentUser] saveInBackground];
-        
-        // Push notification
-        [[FTToolBox sharedGlobalData] sendPushForMessageToRecipients:message[@"recipientsObjectId"]];
         
         // 3. Fin de l'envoie
         [self performSelector:@selector(displaySuccess) withObject:nil afterDelay:1];
