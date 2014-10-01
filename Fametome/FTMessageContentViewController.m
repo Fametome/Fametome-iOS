@@ -117,6 +117,7 @@
             [MBProgressHUD hideHUDForView:self.view animated:YES];
         }else{
             NSLog(@"Error %@ %@", error, [error userInfo]);
+            [[FTToolBox sharedGlobalData] redirectToReception:self];
         }
     }];
     
