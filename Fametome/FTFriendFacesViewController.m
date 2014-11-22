@@ -156,7 +156,7 @@
 
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
     
-    NSString *text = [NSString stringWithFormat:@"Votre ami %@ n'a aucune faces."];
+    NSString *text = [NSString stringWithFormat:@"Votre ami n'a aucune faces."];
     
     NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;

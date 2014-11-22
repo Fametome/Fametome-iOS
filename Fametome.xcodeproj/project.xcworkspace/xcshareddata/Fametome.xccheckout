@@ -10,29 +10,29 @@
 	<string>Fametome</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EAC5DAAC-FCC7-4B98-BC6D-301D1E0D9D89</key>
+		<key>652E22A6523D429862A98AF26E8E3B4540AA6B3D</key>
 		<string>https://github.com/moumoune/Fametome-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Fametome.xcodeproj/project.xcworkspace</string>
+	<string>Fametome.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EAC5DAAC-FCC7-4B98-BC6D-301D1E0D9D89</key>
+		<key>652E22A6523D429862A98AF26E8E3B4540AA6B3D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/moumoune/Fametome-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EAC5DAAC-FCC7-4B98-BC6D-301D1E0D9D89</string>
+	<string>652E22A6523D429862A98AF26E8E3B4540AA6B3D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EAC5DAAC-FCC7-4B98-BC6D-301D1E0D9D89</string>
+			<string>652E22A6523D429862A98AF26E8E3B4540AA6B3D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Fametome-iOS</string>
 		</dict>

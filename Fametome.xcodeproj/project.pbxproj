@@ -84,7 +84,6 @@
 		96701BDD1993876C00A01603 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96701BDC1993876C00A01603 /* MobileCoreServices.framework */; };
 		96701BDF1993877100A01603 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96701BDE1993877100A01603 /* QuartzCore.framework */; };
 		96701BE11993877A00A01603 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96701BE01993877A00A01603 /* Security.framework */; };
-		96701BE31993878E00A01603 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96701BE21993878E00A01603 /* StoreKit.framework */; };
 		96701BE71993922600A01603 /* FTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BE61993922600A01603 /* FTSignUpViewController.m */; };
 		96701BEA199398FE00A01603 /* FTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96701BE9199398FE00A01603 /* FTLoginViewController.m */; };
 		9679173619B0F8B5002EB9A0 /* FTFriendFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9679173519B0F8B5002EB9A0 /* FTFriendFacesViewController.m */; };
@@ -234,7 +233,6 @@
 		96701BDC1993876C00A01603 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		96701BDE1993877100A01603 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		96701BE01993877A00A01603 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		96701BE21993878E00A01603 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		96701BE51993922600A01603 /* FTSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSignUpViewController.h; sourceTree = "<group>"; };
 		96701BE61993922600A01603 /* FTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSignUpViewController.m; sourceTree = "<group>"; };
 		96701BE8199398FE00A01603 /* FTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLoginViewController.h; sourceTree = "<group>"; };
@@ -281,7 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				966A101A19C03EF600176EEA /* Bolts.framework in Frameworks */,
-				96701BE31993878E00A01603 /* StoreKit.framework in Frameworks */,
 				96701BE11993877A00A01603 /* Security.framework in Frameworks */,
 				96701BDF1993877100A01603 /* QuartzCore.framework in Frameworks */,
 				96701BDD1993876C00A01603 /* MobileCoreServices.framework in Frameworks */,
@@ -498,7 +495,6 @@
 			isa = PBXGroup;
 			children = (
 				966A101919C03EF600176EEA /* Bolts.framework */,
-				96701BE21993878E00A01603 /* StoreKit.framework */,
 				96701BE01993877A00A01603 /* Security.framework */,
 				96701BDE1993877100A01603 /* QuartzCore.framework */,
 				96701BDC1993876C00A01603 /* MobileCoreServices.framework */,
@@ -721,6 +717,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Fametome;
 				TargetAttributes = {
+					96701B5719929CD000A01603 = {
+						DevelopmentTeam = P3H39LNPEW;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
 					96701B7719929CD000A01603 = {
 						TestTargetID = 96701B5719929CD000A01603;
 					};

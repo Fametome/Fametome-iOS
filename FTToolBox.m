@@ -507,7 +507,6 @@ static FTToolBox *sharedGlobalData = nil;
     //[friendQuery whereKey:@"objectId" equalTo:objectId];
     PFUser *user = (PFUser *)[[PFUser query] getObjectWithId:objectId];
     
-    
     PFQuery *query = [PFInstallation query];
     //[query whereKey:@"user" matchesQuery:friendQuery];
     [query whereKey:@"user" equalTo:user];
